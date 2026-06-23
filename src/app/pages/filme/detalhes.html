@@ -17,7 +17,7 @@
 
         <div class="info-item">
           <label>Ano:</label>
-          <span>item.ano</span>
+          <span>{{ item.ano }}</span>
         </div>
 
         <div class="info-item">
@@ -58,7 +58,7 @@
             <tbody>
               @for (sessao of listaSessoes; track sessao.id) {
                 <tr>
-                  <td> sessao.sala </td>
+                  <td> {{ sessao.sala }} </td>
                   <td>{{ sessao.horario }}</td>
                   <td class="price">{{ sessao.preco | currency:'BRL':'symbol':'1.2-2' }}</td>
                   <td>

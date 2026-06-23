@@ -21,10 +21,10 @@ export class DetalhesComponent implements OnInit {
   private filmeService = null;
 
   filme: Observable<Filme> = of();
-  sessoes: Observable<any[]> = of([]);
+  sessoes: Observable<Sessao[]> = of([]);
 
   ngOnInit(): void {
-    this.filme = of( {id: 1, nome: 'Toy Story 5', duracao: 105, genero: 'ANIMACAO', classificacao: 'LIVRE', ano: 2026, capa: 'https://ingresso-a.akamaihd.net/prd/img/movie/toy-story-5/709f36bd-9b92-49ab-8046-677758834769.webp', diretor: 'Pete Docter', elenco: 'Tom Hanks, Tim Allen, Annie Potts, Tony Hale', descricao: 'Woody e Buzz embarcam em uma nova aventura que testa os limites da amizade e da imaginação.', avaliacao: 9.2 });
+    this.filme = of( {id: 1, nome: 'Superman Legacy', duracao: 105, genero: 'ANIMACAO', classificacao: 'Não recomendado para menores de 14 anos', ano: 2025, capa: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqPpZ0IEtAuGFobO5n9ex1WNKAHlE70iJAVi0TIB8WuJ-NrskmMOQRm4&s=10', diretor: 'James Gunn', elenco: 'David Corenswet, Rachel Brosnahan, Nicholas Hoult', descricao: 'O universo DC imaginado do zero com uma mistura singular de ação épica, humor e emoção.', avaliacao: 7.6 });
 
     this.sessoes = of ([
       { id: 1, horario: '11:00', sala: 'Sala 1' , preco: 19.99 },
